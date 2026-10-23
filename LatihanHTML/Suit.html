@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ini Game</title>
+</head>
+<body>
+    <center>
+    <h1>Suit</h1>
+    <table width="500">
+        <tr>
+            <td>
+                <h2>YOU</h2>
+                <button onclick="main('Batu')">BATU</button>
+                <button onclick="main('Gunting')">GUNTING</button>
+                <button onclick="main('Kertas')">KERTAS</button><br>
+                <img id="pil_user" src="img.Suit/Batu.png" width="100px">
+                
+            </td>
+            <td>
+                <h2>COM</h2>
+                <button id="com">RANDOM</button><br>
+                <img id="pil_com" src="img.Suit/Batu.png" width="100px">
+                
+            </td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">
+                <p id="hasil"> HASIL</p>
+                <p>Menang: <span id="skor_user">0</span></p>
+                <p>Kalah: <span id="skor_com">0</span></p>
+                <p>Seri: <span id="skor_seri">0</span></p>
+            </td>
+        </tr>
+    </table>
+    <script src="SuitScript.js"></script>
+    </center>
+</body>
+</html>
